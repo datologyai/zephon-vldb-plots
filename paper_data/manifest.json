@@ -1,0 +1,398 @@
+{
+  "schema": 1,
+  "figures": {
+    "1": "Checkpoint-resize loss and batch hashes",
+    "6": "Fetch-and-batch scaling",
+    "7": "VLM pipeline throughput",
+    "8": "Downstream evaluation topology spread",
+    "9": "VLM training loss"
+  },
+  "renderer_source_revision": "f91d9e20f40d84136693574a1152b97102e72cdc",
+  "files": {
+    "paper_data/figure_6/vldb_fnb_others-text.csv": {
+      "sha256": "741c8034026d61ad59381d9e8bea5fa462575a334b670e6c91f053098fe4d6e7",
+      "source_sha256": "93899ae85896592fd46f8b7c83ddc7168800a6ee5938077b282770e1a2a72d00",
+      "selection": "Shuffled batch-32 observations for the paper overview, GIL and SHM panels; seed values unchanged.",
+      "rows": 42,
+      "columns": [
+        "sweep_python",
+        "sweep_run_name",
+        "loader_name",
+        "benchmark.warmup_steps",
+        "benchmark.measure_steps",
+        "result.total_time_s",
+        "result.step_time_s",
+        "result.it_per_second",
+        "result.samples_per_second",
+        "run.batch_size",
+        "run.num_workers",
+        "run.seed",
+        "run.limit_steps"
+      ]
+    },
+    "paper_data/figure_6/vldb_fnb_streaming-text.csv": {
+      "sha256": "dcda54b0316692d6ab177c09f540d6a057f8ce6ada73a7e98b4fac6806c6ea6c",
+      "source_sha256": "891ab00fe75952872bdef9aafebd217f6579f33537004edbdf1b77a95b9743e4",
+      "selection": "Shuffled batch-32 observations for the paper overview, GIL and SHM panels; seed values unchanged.",
+      "rows": 21,
+      "columns": [
+        "sweep_python",
+        "sweep_run_name",
+        "loader_name",
+        "benchmark.warmup_steps",
+        "benchmark.measure_steps",
+        "result.total_time_s",
+        "result.step_time_s",
+        "result.it_per_second",
+        "result.samples_per_second",
+        "run.batch_size",
+        "run.num_workers",
+        "run.seed",
+        "run.limit_steps"
+      ]
+    },
+    "paper_data/figure_6/vldb_fnb_others-vlm-raw.csv": {
+      "sha256": "95ea1d91ae6e2c87f7eb6b3184793563c079783af2050b6ee0aa54e59a76e562",
+      "source_sha256": "108ea709e3a8e594c777fece79401c831f57c2eef08dc8f1b0c2eac8d919aac4",
+      "selection": "Shuffled batch-32 observations for the paper overview, GIL and SHM panels; seed values unchanged.",
+      "rows": 63,
+      "columns": [
+        "sweep_python",
+        "sweep_run_name",
+        "loader_name",
+        "benchmark.warmup_steps",
+        "benchmark.measure_steps",
+        "result.total_time_s",
+        "result.step_time_s",
+        "result.it_per_second",
+        "result.samples_per_second",
+        "run.batch_size",
+        "run.num_workers",
+        "run.seed",
+        "run.limit_steps"
+      ]
+    },
+    "paper_data/figure_6/vldb_fnb_zephon-text.csv": {
+      "sha256": "cd00c15e0bfc2d1893cc5ab30ce8914ae784d06a21055d8b3a4612413667c1c0",
+      "source_sha256": "d7f9e8b7c71514b990d41ad2dce0fa4ea28a1fafe39ac3c83a4faa2831a26bef",
+      "selection": "Shuffled batch-32 observations for the paper overview, GIL and SHM panels; seed values unchanged.",
+      "rows": 84,
+      "columns": [
+        "sweep_python",
+        "sweep_run_name",
+        "loader_name",
+        "benchmark.warmup_steps",
+        "benchmark.measure_steps",
+        "result.total_time_s",
+        "result.step_time_s",
+        "result.it_per_second",
+        "result.samples_per_second",
+        "run.batch_size",
+        "run.num_workers",
+        "run.seed",
+        "run.limit_steps"
+      ]
+    },
+    "paper_data/figure_6/vldb_fnb_zephon-vlm-raw.csv": {
+      "sha256": "92f077461a5c155fcea9835f68b4101c4256124272fcf2c8fd19928c4b936e7d",
+      "source_sha256": "9a76114e1cdb8923f5cdd0ce7ecb6742970b9ddb960bb2a4959bb8233676724a",
+      "selection": "Shuffled batch-32 observations for the paper overview, GIL and SHM panels; seed values unchanged.",
+      "rows": 84,
+      "columns": [
+        "sweep_python",
+        "sweep_run_name",
+        "loader_name",
+        "benchmark.warmup_steps",
+        "benchmark.measure_steps",
+        "result.total_time_s",
+        "result.step_time_s",
+        "result.it_per_second",
+        "result.samples_per_second",
+        "run.batch_size",
+        "run.num_workers",
+        "run.seed",
+        "run.limit_steps"
+      ]
+    },
+    "paper_data/figure_6/vldb_fnb_zephon-text-noshm.csv": {
+      "sha256": "91689cb8776c6862365c9e9dc7cf88a5671559f822a139dc2b10ab0cb30e1dae",
+      "source_sha256": "dae43d5a411008fcf29f756037521f142e0201c02202de929ce97952d5d06269",
+      "selection": "Shuffled batch-32 observations for the paper overview, GIL and SHM panels; seed values unchanged.",
+      "rows": 21,
+      "columns": [
+        "sweep_python",
+        "sweep_run_name",
+        "loader_name",
+        "benchmark.warmup_steps",
+        "benchmark.measure_steps",
+        "result.total_time_s",
+        "result.step_time_s",
+        "result.it_per_second",
+        "result.samples_per_second",
+        "run.batch_size",
+        "run.num_workers",
+        "run.seed",
+        "run.limit_steps"
+      ]
+    },
+    "paper_data/figure_6/vldb_fnb_zephon-vlm-raw-noshm.csv": {
+      "sha256": "512acfdf5eebff54dcab70f15ed4b44de285a3ce7a1ea293484c02c95f7d37b9",
+      "source_sha256": "82f2976eea968e6fdef9452cd9e94617d6bd913cca6d63ebfdf2d75e213206dd",
+      "selection": "Shuffled batch-32 observations for the paper overview, GIL and SHM panels; seed values unchanged.",
+      "rows": 21,
+      "columns": [
+        "sweep_python",
+        "sweep_run_name",
+        "loader_name",
+        "benchmark.warmup_steps",
+        "benchmark.measure_steps",
+        "result.total_time_s",
+        "result.step_time_s",
+        "result.it_per_second",
+        "result.samples_per_second",
+        "run.batch_size",
+        "run.num_workers",
+        "run.seed",
+        "run.limit_steps"
+      ]
+    },
+    "paper_data/figure_7/vldb_vlm_zephon-fused.csv": {
+      "sha256": "e59cd613590cd1ad32d3d626aa2288be116b2d2e59de3b4ffd84a815da9dbb50",
+      "source_sha256": "5c241ea02cdd9fcbd444c8fdf1e42f8d18bce17875b5065109a152ad97f00b72",
+      "selection": "All seed observations for the paper-selected best allocation at each DOP; metric values unchanged.",
+      "rows": 12,
+      "columns": [
+        "loader_name",
+        "result.total_time_s",
+        "result.step_time_s",
+        "result.it_per_second",
+        "result.samples_per_second",
+        "run.num_workers",
+        "run.seed",
+        "result.packing_efficiency",
+        "result.usable_tokens_per_second"
+      ]
+    },
+    "paper_data/figure_7/vldb_vlm_grain.csv": {
+      "sha256": "70fc31644d9cf1c4ac7910c044d6406f59d576902fbb35e6ceb7f5384a25bfe8",
+      "source_sha256": "c591cbe4ecbe94fa040516019e9d78bcfa3f798007b91c7ab43f6d36b4a3bf2d",
+      "selection": "All seed observations for the paper-selected best allocation at each DOP; metric values unchanged.",
+      "rows": 12,
+      "columns": [
+        "loader_name",
+        "result.total_time_s",
+        "result.step_time_s",
+        "result.it_per_second",
+        "result.samples_per_second",
+        "run.num_workers",
+        "run.seed",
+        "result.packing_efficiency",
+        "result.usable_tokens_per_second"
+      ]
+    },
+    "paper_data/figure_7/vldb_vlm_internalds.csv": {
+      "sha256": "29be0ff6d06b98e691ecc45533fc845297b7c8d76c5d9c55d10fab9433527cf7",
+      "source_sha256": "27a00b93bcbbf6699f58f132d2626b27c1bd4cd238f4480491e6428e7f1f1853",
+      "selection": "All seed observations for the paper-selected best allocation at each DOP; metric values unchanged.",
+      "rows": 12,
+      "columns": [
+        "loader_name",
+        "result.total_time_s",
+        "result.step_time_s",
+        "result.it_per_second",
+        "result.samples_per_second",
+        "run.num_workers",
+        "run.seed",
+        "result.packing_efficiency",
+        "result.usable_tokens_per_second"
+      ]
+    },
+    "paper_data/figure_1/dp8/per_step.csv": {
+      "sha256": "a27e3a24eb15d71a5046cefe7eb823f0682a963714ec7fd361f299b94c19e013",
+      "source_sha256": "a27e3a24eb15d71a5046cefe7eb823f0682a963714ec7fd361f299b94c19e013",
+      "selection": "Complete final 300-step comparisons for both loader arms; bytes unchanged.",
+      "rows": 600,
+      "columns": [
+        "arm",
+        "step",
+        "is_post_fault",
+        "reference_model_batch_multiset_sha256",
+        "fault_model_batch_multiset_sha256",
+        "full_hash_match",
+        "reference_canonical_batch_sha256",
+        "fault_canonical_batch_sha256",
+        "canonical_hash_match",
+        "reference_loss",
+        "fault_loss",
+        "reference_loss_tensor_sha256",
+        "fault_loss_tensor_sha256",
+        "loss_exact",
+        "loss_abs_diff",
+        "loss_rel_diff",
+        "loss_ulp_distance",
+        "loss_within_tolerance",
+        "reference_sample_count",
+        "fault_sample_count",
+        "rank_coverage_ok"
+      ]
+    },
+    "paper_data/figure_1/dp8/summary.json": {
+      "sha256": "c0ca8dfa4e2c7dfb6bf0266a5c4882441b0fe16b4b94b6dbed7688c416da4918",
+      "source_sha256": "32c65c907d2ed9344287505e611211722a1cd1b29eaa5952c3500e5ca744776f",
+      "selection": "Checkpoint boundary and topology metadata; storage locations excluded."
+    },
+    "paper_data/figure_1/dp32/per_step.csv": {
+      "sha256": "f3236f0ae459979c24386c906da2592cb1602fcd5535de88b8ce2710f7e08ffb",
+      "source_sha256": "f3236f0ae459979c24386c906da2592cb1602fcd5535de88b8ce2710f7e08ffb",
+      "selection": "Complete final 300-step comparisons for both loader arms; bytes unchanged.",
+      "rows": 600,
+      "columns": [
+        "arm",
+        "step",
+        "is_post_fault",
+        "reference_model_batch_multiset_sha256",
+        "fault_model_batch_multiset_sha256",
+        "full_hash_match",
+        "reference_canonical_batch_sha256",
+        "fault_canonical_batch_sha256",
+        "canonical_hash_match",
+        "reference_loss",
+        "fault_loss",
+        "reference_loss_tensor_sha256",
+        "fault_loss_tensor_sha256",
+        "loss_exact",
+        "loss_abs_diff",
+        "loss_rel_diff",
+        "loss_ulp_distance",
+        "loss_within_tolerance",
+        "reference_sample_count",
+        "fault_sample_count",
+        "rank_coverage_ok"
+      ]
+    },
+    "paper_data/figure_1/dp32/summary.json": {
+      "sha256": "82ac1e6cdd9c99c8fb20b008b59ce488203d11df129b4abbdb2ae1da50605e76",
+      "source_sha256": "569b706a67b3196191d78f398db2605cdc21933150dd6ba177070465c9069294",
+      "selection": "Checkpoint boundary and topology metadata; storage locations excluded."
+    },
+    "paper_data/figure_1/dp64/per_step.csv": {
+      "sha256": "4c48efa158623f869cc3358bc85492305402fea7aea3261cb8dfea4373bc31c8",
+      "source_sha256": "4c48efa158623f869cc3358bc85492305402fea7aea3261cb8dfea4373bc31c8",
+      "selection": "Complete final 300-step comparisons for both loader arms; bytes unchanged.",
+      "rows": 600,
+      "columns": [
+        "arm",
+        "step",
+        "is_post_fault",
+        "reference_model_batch_multiset_sha256",
+        "fault_model_batch_multiset_sha256",
+        "full_hash_match",
+        "reference_canonical_batch_sha256",
+        "fault_canonical_batch_sha256",
+        "canonical_hash_match",
+        "reference_loss",
+        "fault_loss",
+        "reference_loss_tensor_sha256",
+        "fault_loss_tensor_sha256",
+        "loss_exact",
+        "loss_abs_diff",
+        "loss_rel_diff",
+        "loss_ulp_distance",
+        "loss_within_tolerance",
+        "reference_sample_count",
+        "fault_sample_count",
+        "rank_coverage_ok"
+      ]
+    },
+    "paper_data/figure_1/dp64/summary.json": {
+      "sha256": "c503e229678a1676c1062db5793757b1486453eeb03017dc76f1b988ff14a9ed",
+      "source_sha256": "5d45980e68dd5b6e73510f6793f5ef2eb36a516b4fc9130c3aeb2868e9383587",
+      "selection": "Checkpoint boundary and topology metadata; storage locations excluded."
+    },
+    "paper_data/figure_8/downstream_evals.json": {
+      "sha256": "fee00d0f60b8ea6815b7479f0a706b86b09780968a35224a522902c9bd2c94e3",
+      "source_sha256": "9b49d77b8cde8e0b19a8901ff6386691ad386fa39153a5ee7186e2e5335293c3",
+      "selection": "Final Core v1/FineWeb results for both seeds and evaluation repeats; other suites and storage metadata excluded."
+    },
+    "paper_data/figure_9/control-dp8.csv": {
+      "sha256": "62fa13a8d40f1feda3ac8670ff9f9f757707899e022e64abc64616ce6d1731b3",
+      "source_sha256": "3cb428aefabdf25e5e3a3bacd8045f4ce438392098b3aba074cd51c928bb1a42",
+      "selection": "Final VLM loss trajectory; step/loss values unchanged, timestamps excluded.",
+      "rows": 269,
+      "columns": [
+        "_step",
+        "train/loss"
+      ]
+    },
+    "paper_data/figure_9/control-dp16.csv": {
+      "sha256": "44cc069a2900d63030d4675fdfef31fc5aac0fc6fc24eb8479519ffacfd5dee9",
+      "source_sha256": "902c6a25aaa52277ee9333846c6daa2df5cd3a4a2a36f97b3b715ce520a51afa",
+      "selection": "Final VLM loss trajectory; step/loss values unchanged, timestamps excluded.",
+      "rows": 268,
+      "columns": [
+        "_step",
+        "train/loss"
+      ]
+    },
+    "paper_data/figure_9/control-dp32.csv": {
+      "sha256": "3d0e0e5dbe88987d51bed6f13971fd408fd2ce9e3bea5d839f470a25ff8a7d29",
+      "source_sha256": "f65580870ec9f58109f25a631b8b4d8075ab768d4b127bcab7ed2a353c9c5a10",
+      "selection": "Final VLM loss trajectory; step/loss values unchanged, timestamps excluded.",
+      "rows": 268,
+      "columns": [
+        "_step",
+        "train/loss"
+      ]
+    },
+    "paper_data/figure_9/control-dp64.csv": {
+      "sha256": "b76a531ab22e58b67658bf53f189a94b676868a3f65ae7911666b0781bead28a",
+      "source_sha256": "66e211b5fdb2435a69cbf688ddbed037108502442a2c3348537f67de57346fbf",
+      "selection": "Final VLM loss trajectory; step/loss values unchanged, timestamps excluded.",
+      "rows": 262,
+      "columns": [
+        "_step",
+        "train/loss"
+      ]
+    },
+    "paper_data/figure_9/zephon-dp8.csv": {
+      "sha256": "f751b7eb066493346428cb68ebba3982797b6e41775c4574aefb5aee3f37eb8b",
+      "source_sha256": "c45c0cb5b1da81cfa26b9c915fb81890097bfe8b7e9f70393fc4a8a183f22bf4",
+      "selection": "Final VLM loss trajectory; step/loss values unchanged, timestamps excluded.",
+      "rows": 269,
+      "columns": [
+        "_step",
+        "train/loss"
+      ]
+    },
+    "paper_data/figure_9/zephon-dp16.csv": {
+      "sha256": "a7199700288f4fe501aa5a3cd923613173fcef1f69d18df632190673a80029aa",
+      "source_sha256": "660182ce3ccd3dbff4e08c09fb2308ed60e744f32394051ee96a44a09f5e9fbb",
+      "selection": "Final VLM loss trajectory; step/loss values unchanged, timestamps excluded.",
+      "rows": 268,
+      "columns": [
+        "_step",
+        "train/loss"
+      ]
+    },
+    "paper_data/figure_9/zephon-dp32.csv": {
+      "sha256": "02a767cd3485cacbe6b1fbbf20206886229309b6427e59bc4c71f5f0e4cb1f68",
+      "source_sha256": "67a15d1e58d316a25acd1c1f0dbd88ec276c37cf0d1ad72c219dcc854821224c",
+      "selection": "Final VLM loss trajectory; step/loss values unchanged, timestamps excluded.",
+      "rows": 268,
+      "columns": [
+        "_step",
+        "train/loss"
+      ]
+    },
+    "paper_data/figure_9/zephon-dp64.csv": {
+      "sha256": "deef23afcb7d098ebd7eb684afd53b99da909e644ca637438e2e78df0d22940b",
+      "source_sha256": "0f30a08a1f43bd3b2e1182fa95dd69ee4313c28f53a0dc922acaa7a63885e773",
+      "selection": "Final VLM loss trajectory; step/loss values unchanged, timestamps excluded.",
+      "rows": 262,
+      "columns": [
+        "_step",
+        "train/loss"
+      ]
+    }
+  }
+}

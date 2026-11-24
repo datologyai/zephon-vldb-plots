@@ -1,0 +1,20 @@
+name: Plot checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.13.6"
+          python-version: "3.13"
+          enable-cache: true
+      - run: uv sync --locked --extra wandb
+      - run: uv run ruff check plotting tests
+      - run: uv run pytest
+      - run: uv run zephon-plots plot all

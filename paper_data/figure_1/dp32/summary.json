@@ -1,0 +1,18 @@
+{
+  "checkpoint_step": 150,
+  "end_step": 300,
+  "runs": {
+    "control_reference": {
+      "world_size": 16
+    },
+    "control_resume": {
+      "world_size": 32
+    },
+    "elastic_reference": {
+      "world_size": 16
+    },
+    "elastic_resume": {
+      "world_size": 32
+    }
+  }
+}
